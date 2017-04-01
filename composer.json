@@ -1,0 +1,22 @@
+{
+    "name": "xutl/yii2-barrager-widget",
+    "description": "Adding barrager to your yii2 project via Composer",
+    "type": "yii2-widget",
+    "keywords": ["yii2","widget","barrager","yii2-barrager"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "xutl",
+            "email": "xutl@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "xutl\\barrager\\": ""
+        }
+    }
+}
