@@ -52,9 +52,8 @@ class Barrager extends Widget
      */
     public function run()
     {
-        $view = $this->getView();
-        BarragerAsset::register($view);
-        $view->registerJs("jQuery.getJSON('{$this->serverUrl}',function(items) {
+        BarragerAsset::register($this->view);
+        $this->view->registerJs("jQuery.getJSON('{$this->serverUrl}',function(items) {
             var barrager_index = 0;
             var barrager_looper = setInterval(function(){
                 jQuery('body').barrager(items[index]);
